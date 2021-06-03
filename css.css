@@ -11,7 +11,7 @@
 
 /* Header & navigation */
 
-    header { background: #585276; padding: 23px; width: 100%; }
+    header { background: #002a54; padding: 23px; width: 100%; }
     header div { align-items: center; display: flex; }
     header div img { display: block; max-width: 201px; width: 100%; }
     header div div.social { justify-content: space-between; width: 90px; }
