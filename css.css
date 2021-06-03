@@ -1,0 +1,131 @@
+/* Reset */
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { font-family: 'Lato', sans-serif; }
+
+    h1, h2, h3, h4, h5 { line-height: 145%; margin-bottom: 1em; text-transform: uppercase; }
+    p, ul { line-height: 145%; margin-bottom: 1em; }
+
+    .inner { margin: 0 auto; max-width: 1000px; width: 90%; }
+
+/* Header & navigation */
+
+    header { background: #585276; padding: 23px; width: 100%; }
+    header div { align-items: center; display: flex; }
+    header div img { display: block; max-width: 201px; width: 100%; }
+    header div div.social { justify-content: space-between; width: 90px; }
+    header div div.social a img { width: 30px; }
+
+    nav { display: block; text-align: center; padding: 0 2em; width: 100%; }
+    nav h2 { color: white; font-size: 1.3em; font-weight: normal; margin-bottom: 0.3em; }
+    nav ul { display: flex; font-size: 0.8em; justify-content: space-between; list-style: none; }
+    nav ul li { margin: 0 10px; }
+    nav ul li a { color: white; text-decoration: none; }
+    nav ul li a:hover { color: #FACB04; }
+
+    @media screen and (max-width: 1000px)
+    {
+        header { text-align: center; }
+        header div { display: block; }
+        header div img { display: inline-block; }
+        header div div.social { text-align: center; width: 100%; }
+
+        nav ul { display: inline-block; }
+    }
+
+/* Slideshow */
+
+    #slides { border-bottom: 7px solid #FACB04; display: block; width: 100%; }
+    #slides > div { align-items: center; color: white; display: flex; position: relative; }
+    #slides > div div { position: absolute; text-align: center; text-transform: uppercase; margin-left: 25%; width: 50%; }
+    #slides > div div h3 { border-bottom: 3px solid #FACB04; display: inline-block; }
+    #slides > div img { display: block; width: 100%; }
+
+    @media screen and (max-width: 1000px)
+    {
+        #slides > div div p { display: none; }
+        #slides > div div h2 { font-size: 1em; }
+    }
+
+    @media screen and (max-width: 650px)
+    {
+        #slides > div div h2 { display: none; }
+    }
+
+    @media screen and (max-width: 500px)
+    {
+        #slides > div div { margin-left: 5%; width: 90%; }
+    }
+
+/* Content */
+
+    #content { color: #6C6C6C; padding: 2em 0; text-align: center; width: 100%; }
+    #content.under { padding-top: 0em !important; }
+
+/* Cards */
+
+    #cards { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0 auto; max-width: 1000px; width: 100%; }
+    #cards div { border: 2px solid gold; flex: 0 45%; margin: 1em; padding: 1em; text-align: left; }
+    #cards div img { float: left; margin-right: 1em; width: 125px; }
+
+    @media screen and (max-width: 650px)
+    {
+        #cards div { flex: 0 100%; }
+    }
+
+/* Contact Form */
+
+    form h2 { margin-top: 1em; }
+    dl { margin-left: 30px; padding: 3px 0; width: 90%; }
+    dl dt { display: inline-block; font-size: 0.8em; text-align: left; width: 200px; }
+    dl dd { display: inline-block; font-size: 0.8em; margin-left: 5%; }
+    dl dd input { border: 1px solid #ccc; padding: 4px; }
+
+/* Portlets */
+
+    #portlets { align-items: center; justify-content: center; border-bottom: 5px solid #FACB04; display: inline-flex; width: 100%; }
+    #portlets div { flex-grow: 1; flex-shrink: 0; position: relative; width: 25%; }
+    #portlets div img { display: block; filter: grayscale(100%); width: 100%; z-index: 50; }
+    #portlets div img:hover { filter: none; }
+    #portlets div span { color: white; left: 50%; position: absolute; top: 50%; transform: translateY(-50%) translateX(-50%); z-index: 100; }
+
+    @media screen and (max-width: 6400px)
+    {
+        #portlets { flex-wrap: wrap; }
+        #portlets div { width: 50%; }
+    }
+
+    @media screen and (max-width: 400px)
+    {
+        #portlets div { width: 100%; }
+    }
+
+/* Steve */
+
+    #steve { color: #6C6C6C; padding: 2em 0; text-align: center; width: 100%; }
+    #steve.under { padding-bottom: 0; }
+    #steve p { margin-top: 1em; }
+
+/* Pair of buttons at the bottom */
+
+    #pair { display: flex; justify-content: space-around; padding: 2em 0; text-align: center; width: 100%; }
+    #pair div { margin: 0 0.5em; max-width: 350px; width: 43%; }
+
+
+/* Footer */
+
+    #footer { background: #585276; color: white; padding: 1em 0; text-align: center; }
+
+/* Classes */
+
+    .button
+    {
+        border: 1px solid #FACB04;
+        color: inherit;
+        display: inline-block;
+        margin: 0.5em;
+        padding: 0.5em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
