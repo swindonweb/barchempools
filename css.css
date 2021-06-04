@@ -101,11 +101,11 @@
         #portlets div { width: 100%; }
     }
 
-/* Steve */
+/* Fix */
 
-    #steve { color: #6C6C6C; padding: 2em 0; text-align: center; width: 100%; }
-    #steve.under { padding-bottom: 0; }
-    #steve p { margin-top: 1em; }
+    #fix { color: #6C6C6C; padding: 2em 0; text-align: center; width: 100%; }
+    #fix.under { padding-bottom: 0; }
+    #fix p { margin-top: 1em; }
 
 /* Pair of buttons at the bottom */
 
